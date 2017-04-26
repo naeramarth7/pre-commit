@@ -11,17 +11,17 @@
 - More readable output messages.
 - Lookup git and npm using `which`.
 - Allow nodejs, node and iojs to call the the hook.
-- Refactored the way options can be passed in to pre-commit, we're now allowing
+- Refactored the way options can be passed in to pre-push, we're now allowing
   objects.
 - The refactor made it possible to test most of the internals so we now have
   90%+ coverage.
-- And the list goes on. 
+- And the list goes on.
 
 ## 0.0.9
 - Added missing uninstall hook to remove and restore old scripts.
 
 ## 0.0.8
-- Added support for installing custom commit templates using `pre-commit.commit-template`
+- Added support for installing custom push templates using `pre-push.push-template`
 
 ## 0.0.7
 - Fixes regression introduced in 0.0.6
@@ -30,7 +30,7 @@
 - Also silence `npm` output when the silent flag has been given.
 
 ## 0.0.5
-- Allow silencing of the pre-commit output by setting a `precommit.silent: true`
+- Allow silencing of the pre-push output by setting a `prepush.silent: true`
   in your `package.json`
 
 ## 0.0.4

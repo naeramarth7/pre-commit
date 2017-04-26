@@ -1,7 +1,7 @@
 {
-  "name": "pre-commit",
+  "name": "pre-push",
   "version": "1.2.2",
-  "description": "Automatically install pre-commit hooks for your npm modules.",
+  "description": "Automatically install pre-push hooks for your npm modules.",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
@@ -12,22 +12,23 @@
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js",
     "uninstall": "node uninstall.js"
   },
+  "pre-push": [ "test" ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/observing/pre-commit.git"
+    "url": "git://github.com/naeramarth7/pre-push.git"
   },
   "keywords": [
     "git",
     "hooks",
     "npm",
-    "pre-commit",
-    "precommit",
+    "pre-push",
+    "prepush",
     "run",
     "test",
     "development"
   ],
   "author": "Arnout Kazemier <opensource@observe.it>",
-  "homepage": "https://github.com/observing/pre-commit",
+  "homepage": "https://github.com/naeramarth7/pre-push",
   "license": "MIT",
   "dependencies": {
     "cross-spawn": "^5.0.1",
@@ -38,6 +39,6 @@
     "assume": "~1.5.0",
     "istanbul": "0.4.x",
     "mocha": "~3.3.0",
-    "pre-commit": "git://github.com/observing/pre-commit.git"
+    "pre-push": "git://github.com/naeramarth7/pre-push.git"
   }
 }
